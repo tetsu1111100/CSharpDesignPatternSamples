@@ -6,6 +6,7 @@ using CSharpDesignPatternSamples.DesignPatterns.DecoratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.FacadePattern;
 using CSharpDesignPatternSamples.DesignPatterns.FactoryPattern;
 using CSharpDesignPatternSamples.DesignPatterns.IteratorPattern;
+using CSharpDesignPatternSamples.DesignPatterns.ObserverPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -71,6 +72,29 @@ Console.WriteLine("迭代器模式");
 //迭代器模式: 提供一種方法來順序訪問集合中的元素，而不暴露集合的底層表示
 IteratorPatternSample iteratorPatternSample = new IteratorPatternSample();
 iteratorPatternSample.Run();
+
+
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("觀察者模式");
+
+//觀察者模式: 讓你的物件掌握現況
+ObserverPatternSample observerPatternSample = new ObserverPatternSample();
+observerPatternSample.Run1();
+Console.WriteLine("---------------");
+observerPatternSample.Run2();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
