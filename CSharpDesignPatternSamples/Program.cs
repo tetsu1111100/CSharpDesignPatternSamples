@@ -5,6 +5,7 @@ using CSharpDesignPatternSamples.DesignPatterns.CompositePattern;
 using CSharpDesignPatternSamples.DesignPatterns.DecoratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.FacadePattern;
 using CSharpDesignPatternSamples.DesignPatterns.FactoryPattern;
+using CSharpDesignPatternSamples.DesignPatterns.IteratorPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -63,9 +64,13 @@ FactoryPatternSample factoryPatternSample = new FactoryPatternSample();
 factoryPatternSample.Run();
 
 
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("迭代器模式");
 
-
-
+//迭代器模式: 提供一種方法來順序訪問集合中的元素，而不暴露集合的底層表示
+IteratorPatternSample iteratorPatternSample = new IteratorPatternSample();
+iteratorPatternSample.Run();
 
 
 
