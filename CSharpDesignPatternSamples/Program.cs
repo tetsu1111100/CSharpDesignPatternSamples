@@ -10,6 +10,7 @@ using CSharpDesignPatternSamples.DesignPatterns.ObserverPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ProxyPattern;
 using CSharpDesignPatternSamples.DesignPatterns.SingletonPattern;
 using CSharpDesignPatternSamples.DesignPatterns.StatePattern;
+using CSharpDesignPatternSamples.DesignPatterns.TemplateMethodPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -116,5 +117,13 @@ Console.WriteLine("狀態模式");
 StatePatternSample statePatternSample = new StatePatternSample();
 statePatternSample.Run();
 
+
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("樣板方法模式");
+
+//樣板方法模式: 定義演算法的骨架(即樣板)，並將某些步驟的實作延遲到子類別中
+TemplateMethodPatternSample templateMethodPatternSample = new TemplateMethodPatternSample();
+templateMethodPatternSample.Run();
 
 
