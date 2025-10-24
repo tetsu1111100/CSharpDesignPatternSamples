@@ -9,6 +9,7 @@ using CSharpDesignPatternSamples.DesignPatterns.IteratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ObserverPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ProxyPattern;
 using CSharpDesignPatternSamples.DesignPatterns.SingletonPattern;
+using CSharpDesignPatternSamples.DesignPatterns.StatePattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -107,8 +108,13 @@ Console.WriteLine("---------------");
 singletonPatternSample.Run2();   //餓漢式 (Eager Initialization)
 
 
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("狀態模式");
 
-
+//狀態模式: 允許物件在其內部狀態改變時改變其行為
+StatePatternSample statePatternSample = new StatePatternSample();
+statePatternSample.Run();
 
 
 
