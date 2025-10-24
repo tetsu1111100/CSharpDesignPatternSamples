@@ -3,6 +3,7 @@ using CSharpDesignPatternSamples.DesignPatterns.AdapterPattern;
 using CSharpDesignPatternSamples.DesignPatterns.CommandPattern;
 using CSharpDesignPatternSamples.DesignPatterns.CompositePattern;
 using CSharpDesignPatternSamples.DesignPatterns.DecoratorPattern;
+using CSharpDesignPatternSamples.DesignPatterns.FacadePattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -43,10 +44,13 @@ DecoratorPatternSample decoratorPatternSample = new DecoratorPatternSample();
 decoratorPatternSample.Run();
 
 
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("門面模式");
 
-
-
-
+//門面模式: 提供一個統一的介面來訪問子系統中的一組介面
+FacadePatternSample facadePatternSample = new FacadePatternSample();
+facadePatternSample.Run();
 
 
 
