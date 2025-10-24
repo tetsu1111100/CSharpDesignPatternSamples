@@ -7,6 +7,7 @@ using CSharpDesignPatternSamples.DesignPatterns.FacadePattern;
 using CSharpDesignPatternSamples.DesignPatterns.FactoryPattern;
 using CSharpDesignPatternSamples.DesignPatterns.IteratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ObserverPattern;
+using CSharpDesignPatternSamples.DesignPatterns.ProxyPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -85,9 +86,13 @@ Console.WriteLine("---------------");
 observerPatternSample.Run2();
 
 
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("代理模式");
 
-
-
+//代理模式: 為其他物件提供一個代理以控制對這個物件的存取
+ProxyPatternSample proxyPatternSample = new ProxyPatternSample();
+proxyPatternSample.Run();
 
 
 
