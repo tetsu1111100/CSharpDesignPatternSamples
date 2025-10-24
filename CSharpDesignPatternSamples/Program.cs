@@ -8,6 +8,7 @@ using CSharpDesignPatternSamples.DesignPatterns.FactoryPattern;
 using CSharpDesignPatternSamples.DesignPatterns.IteratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ObserverPattern;
 using CSharpDesignPatternSamples.DesignPatterns.ProxyPattern;
+using CSharpDesignPatternSamples.DesignPatterns.SingletonPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -95,9 +96,15 @@ ProxyPatternSample proxyPatternSample = new ProxyPatternSample();
 proxyPatternSample.Run();
 
 
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("單例模式");
 
-
-
+//單例模式: 獨一無二的物件(確保一個類別只有一個實例，並提供全域存取點)
+SingletonPatternSample singletonPatternSample = new SingletonPatternSample();
+singletonPatternSample.Run1();   //懶漢式 (Lazy Initialization)
+Console.WriteLine("---------------");
+singletonPatternSample.Run2();   //餓漢式 (Eager Initialization)
 
 
 
