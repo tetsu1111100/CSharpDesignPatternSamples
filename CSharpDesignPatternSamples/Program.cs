@@ -4,6 +4,7 @@ using CSharpDesignPatternSamples.DesignPatterns.CommandPattern;
 using CSharpDesignPatternSamples.DesignPatterns.CompositePattern;
 using CSharpDesignPatternSamples.DesignPatterns.DecoratorPattern;
 using CSharpDesignPatternSamples.DesignPatterns.FacadePattern;
+using CSharpDesignPatternSamples.DesignPatterns.FactoryPattern;
 
 Console.WriteLine("C# 設計模式範例");
 Console.WriteLine();
@@ -51,6 +52,22 @@ Console.WriteLine("門面模式");
 //門面模式: 提供一個統一的介面來訪問子系統中的一組介面
 FacadePatternSample facadePatternSample = new FacadePatternSample();
 facadePatternSample.Run();
+
+
+Console.WriteLine();
+Console.WriteLine("==========================================================");
+Console.WriteLine("工廠模式");
+
+//工廠模式: 創建物件的工廠
+FactoryPatternSample factoryPatternSample = new FactoryPatternSample();
+factoryPatternSample.Run();
+
+
+
+
+
+
+
 
 
 
